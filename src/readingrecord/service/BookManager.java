@@ -21,21 +21,13 @@ public class BookManager {
 		bookList.add(book);
 		System.out.println("登録完了しました");
 		System.out.println();
-		System.out.println();
 	}
 	
 	public void viewBooks(){
-		int i = 1;
 		System.out.println("--登録されている本の一覧--");
 		for(Book book : bookList) {
-			System.out.println(i);
-			System.out.println("タイトル：" + book.getBookTitle());
-			System.out.println("著者：" + book.getAuthor());
-			System.out.println("ページ数：" + book.getPage());
-			System.out.println();
-			i++;
+			System.out.println(book);
 		}
-		System.out.println();
 		System.out.println();
 	}
 	
@@ -45,7 +37,6 @@ public class BookManager {
 			total += book.getPage();
 		}
 		System.out.println("登録されている本の合計ページ数は" + total + "です");
-		System.out.println();
 		System.out.println();
 	}
 }

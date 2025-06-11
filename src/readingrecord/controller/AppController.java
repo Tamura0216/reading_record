@@ -21,18 +21,26 @@ public class AppController {
 
 			switch (input_num) {
 			case 1:
+				System.out.println();
 				bookManager.registerBook();
+				System.out.println();
 				break;
 			case 2:
+				System.out.println();
 				bookManager.viewBooks();
+				System.out.println();
 				break;
 			case 3:
+				System.out.println();
 				bookManager.totalPage();
+				System.out.println();
 				break;
 			case 4:
+				System.out.println();
 				System.out.println("アプリを終了します");
 				return;
 			default:
+				System.out.println();
 				System.out.println("不正な数字が入力されました");
 				break;
 			}

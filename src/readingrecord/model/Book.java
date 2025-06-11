@@ -35,4 +35,8 @@ public class Book {
 		this.page = page;
 	}
 	
+	@Override
+	public String toString() {
+		return "タイトル: " + bookTitle + ", 著者: " + author + ", ページ数: " + page + "ページ";
+	}
 }
